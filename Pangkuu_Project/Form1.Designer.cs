@@ -28,22 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            label1 = new Label();
-            LoginButton = new Guna.UI2.WinForms.Guna2Button();
-            label2 = new Label();
-            NamaPengguna = new Label();
-            TextboxNP = new Guna.UI2.WinForms.Guna2TextBox();
-            KataSandi = new Label();
-            TextboxKS = new Guna.UI2.WinForms.Guna2TextBox();
-            LupaKataSandi = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -185,23 +172,23 @@
             label6.TabIndex = 12;
             label6.Text = "Daftar disini";
             // 
+            // button4
+            // 
+            button4.Location = new Point(418, 246);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 29);
+            button4.TabIndex = 3;
+            button4.Text = "button4";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(866, 477);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(LupaKataSandi);
-            Controls.Add(TextboxKS);
-            Controls.Add(KataSandi);
-            Controls.Add(TextboxNP);
-            Controls.Add(NamaPengguna);
-            Controls.Add(label2);
-            Controls.Add(LoginButton);
-            Controls.Add(label1);
-            Font = new Font("Microsoft Sans Serif", 8.25F);
+            ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Name = "Form1";
             Text = " ";
             Load += Form1_Load;
@@ -210,15 +197,9 @@
         }
 
         #endregion
-        private Label label1;
-        private Guna.UI2.WinForms.Guna2Button LoginButton;
-        private Label label2;
-        private Label NamaPengguna;
-        private Guna.UI2.WinForms.Guna2TextBox TextboxNP;
-        private Label KataSandi;
-        private Guna.UI2.WinForms.Guna2TextBox TextboxKS;
-        private Label LupaKataSandi;
-        private Label label5;
-        private Label label6;
+
+        private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }
