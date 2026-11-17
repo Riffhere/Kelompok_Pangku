@@ -34,6 +34,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             LoginButton = new Guna.UI2.WinForms.Guna2Button();
             label2 = new Label();
@@ -44,6 +45,8 @@
             LupaKataSandi = new Label();
             label5 = new Label();
             label6 = new Label();
+            btnHide = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)btnHide).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -185,12 +188,25 @@
             label6.TabIndex = 12;
             label6.Text = "Daftar disini";
             // 
+            // btnHide
+            // 
+            btnHide.BackColor = Color.Transparent;
+            btnHide.Image = (Image)resources.GetObject("btnHide.Image");
+            btnHide.Location = new Point(639, 289);
+            btnHide.Name = "btnHide";
+            btnHide.Size = new Size(25, 26);
+            btnHide.SizeMode = PictureBoxSizeMode.Zoom;
+            btnHide.TabIndex = 13;
+            btnHide.TabStop = false;
+            btnHide.Click += btnHide_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(866, 477);
+            Controls.Add(btnHide);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(LupaKataSandi);
@@ -205,6 +221,7 @@
             Name = "Form1";
             Text = " ";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)btnHide).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -220,5 +237,6 @@
         private Label LupaKataSandi;
         private Label label5;
         private Label label6;
+        private PictureBox btnHide;
     }
 }

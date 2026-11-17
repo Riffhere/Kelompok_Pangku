@@ -51,21 +51,35 @@ namespace Pangkuu_Project
 
         private void picPassword_Click(object sender, EventArgs e)
         {
-            passwordVisible = !passwordVisible;
 
-            txtpassword.UseSystemPasswordChar = !passwordVisible;
+        }
 
-            if (passwordVisible)
+        private void btnHide_Click(object sender, EventArgs e)
+        {
+            if (txtpassword.PasswordChar == '*')
             {
-                picPassword.Image = Image.FromFile(
-                    @"Images\eye_open.png");
+                txtpassword.PasswordChar = '\0';
+                btnHide.Text = "Hide";
             }
             else
             {
-                picPassword.Image = Image.FromFile(
-                    @"Images\eye_closed.png");
+                txtpassword.PasswordChar = '*';
+                btnHide.Text = "Show";
             }
+        }
+
+
+private void btnhide (object sender, EventArgs e)
+        {
+            txtpassword.UseSystemPasswordChar = true;
+            btnHide.Text = "Show";
+        }
+
+        private void btnhide_Click(object sender, EventArgs e)
+        {
+        
         }
 
     }
 }
+
