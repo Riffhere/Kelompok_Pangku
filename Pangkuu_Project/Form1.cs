@@ -41,5 +41,31 @@ namespace Pangkuu_Project
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private bool passwordVisible = false;
+
+        private void picPassword_Click(object sender, EventArgs e)
+        {
+            passwordVisible = !passwordVisible;
+
+            txtpassword.UseSystemPasswordChar = !passwordVisible;
+
+            if (passwordVisible)
+            {
+                picPassword.Image = Image.FromFile(
+                    @"Images\eye_open.png");
+            }
+            else
+            {
+                picPassword.Image = Image.FromFile(
+                    @"Images\eye_closed.png");
+            }
+        }
+
     }
 }

@@ -28,9 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            label1 = new Label();
+            LoginButton = new Guna.UI2.WinForms.Guna2Button();
+            label2 = new Label();
+            NamaPengguna = new Label();
+            txtpengguna = new Guna.UI2.WinForms.Guna2TextBox();
+            KataSandi = new Label();
+            txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
+            LupaKataSandi = new Label();
+            label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -86,27 +99,27 @@
             NamaPengguna.TabIndex = 6;
             NamaPengguna.Text = "Nama Pengguna";
             // 
-            // TextboxNP
+            // txtpengguna
             // 
-            TextboxNP.BackColor = Color.Transparent;
-            TextboxNP.BorderRadius = 10;
-            TextboxNP.CustomizableEdges = customizableEdges3;
-            TextboxNP.DefaultText = "";
-            TextboxNP.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            TextboxNP.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            TextboxNP.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            TextboxNP.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            TextboxNP.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            TextboxNP.Font = new Font("Segoe UI", 9F);
-            TextboxNP.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TextboxNP.Location = new Point(165, 173);
-            TextboxNP.Margin = new Padding(3, 4, 3, 4);
-            TextboxNP.Name = "TextboxNP";
-            TextboxNP.PlaceholderText = "";
-            TextboxNP.SelectedText = "";
-            TextboxNP.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            TextboxNP.Size = new Size(513, 44);
-            TextboxNP.TabIndex = 7;
+            txtpengguna.BackColor = Color.Transparent;
+            txtpengguna.BorderRadius = 10;
+            txtpengguna.CustomizableEdges = customizableEdges3;
+            txtpengguna.DefaultText = "";
+            txtpengguna.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtpengguna.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtpengguna.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtpengguna.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtpengguna.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtpengguna.Font = new Font("Segoe UI", 9F);
+            txtpengguna.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtpengguna.Location = new Point(165, 173);
+            txtpengguna.Margin = new Padding(3, 4, 3, 4);
+            txtpengguna.Name = "txtpengguna";
+            txtpengguna.PlaceholderText = "masukkan nama pengguna";
+            txtpengguna.SelectedText = "";
+            txtpengguna.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtpengguna.Size = new Size(513, 44);
+            txtpengguna.TabIndex = 7;
             // 
             // KataSandi
             // 
@@ -118,26 +131,26 @@
             KataSandi.TabIndex = 8;
             KataSandi.Text = "Kata Sandi";
             // 
-            // TextboxKS
+            // txtpassword
             // 
-            TextboxKS.BorderRadius = 10;
-            TextboxKS.CustomizableEdges = customizableEdges5;
-            TextboxKS.DefaultText = "";
-            TextboxKS.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            TextboxKS.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            TextboxKS.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            TextboxKS.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            TextboxKS.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            TextboxKS.Font = new Font("Segoe UI", 9F);
-            TextboxKS.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TextboxKS.Location = new Point(165, 280);
-            TextboxKS.Margin = new Padding(3, 4, 3, 4);
-            TextboxKS.Name = "TextboxKS";
-            TextboxKS.PlaceholderText = "";
-            TextboxKS.SelectedText = "";
-            TextboxKS.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            TextboxKS.Size = new Size(513, 44);
-            TextboxKS.TabIndex = 9;
+            txtpassword.BorderRadius = 10;
+            txtpassword.CustomizableEdges = customizableEdges5;
+            txtpassword.DefaultText = "";
+            txtpassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtpassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtpassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtpassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtpassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtpassword.Font = new Font("Segoe UI", 9F);
+            txtpassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtpassword.Location = new Point(165, 280);
+            txtpassword.Margin = new Padding(3, 4, 3, 4);
+            txtpassword.Name = "txtpassword";
+            txtpassword.PlaceholderText = "masukkan kata sandi";
+            txtpassword.SelectedText = "";
+            txtpassword.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtpassword.Size = new Size(513, 44);
+            txtpassword.TabIndex = 9;
             // 
             // LupaKataSandi
             // 
@@ -172,23 +185,23 @@
             label6.TabIndex = 12;
             label6.Text = "Daftar disini";
             // 
-            // button4
-            // 
-            button4.Location = new Point(418, 246);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 29);
-            button4.TabIndex = 3;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            BackColor = Color.White;
+            ClientSize = new Size(866, 477);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(LupaKataSandi);
+            Controls.Add(txtpassword);
+            Controls.Add(KataSandi);
+            Controls.Add(txtpengguna);
+            Controls.Add(NamaPengguna);
+            Controls.Add(label2);
+            Controls.Add(LoginButton);
+            Controls.Add(label1);
+            Font = new Font("Microsoft Sans Serif", 8.25F);
             Name = "Form1";
             Text = " ";
             Load += Form1_Load;
@@ -197,9 +210,15 @@
         }
 
         #endregion
-
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2Button LoginButton;
+        private Label label2;
+        private Label NamaPengguna;
+        private Guna.UI2.WinForms.Guna2TextBox txtpengguna;
+        private Label KataSandi;
+        private Guna.UI2.WinForms.Guna2TextBox txtpassword;
+        private Label LupaKataSandi;
+        private Label label5;
+        private Label label6;
     }
 }
