@@ -28,55 +28,197 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            label1 = new Label();
+            LoginButton = new Guna.UI2.WinForms.Guna2Button();
+            label2 = new Label();
+            NamaPengguna = new Label();
+            TextboxNP = new Guna.UI2.WinForms.Guna2TextBox();
+            KataSandi = new Label();
+            TextboxKS = new Guna.UI2.WinForms.Guna2TextBox();
+            LupaKataSandi = new Label();
+            label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // label1
             // 
-            button1.Location = new Point(226, 145);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial Narrow", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(165, 38);
+            label1.Name = "label1";
+            label1.Size = new Size(185, 33);
+            label1.TabIndex = 1;
+            label1.Text = "Selamat datang";
+            label1.Click += label1_Click_1;
             // 
-            // button2
+            // LoginButton
             // 
-            button2.Location = new Point(442, 108);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            LoginButton.BackColor = Color.Transparent;
+            LoginButton.BorderRadius = 6;
+            LoginButton.CustomizableEdges = customizableEdges1;
+            LoginButton.DisabledState.BorderColor = Color.DarkGray;
+            LoginButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            LoginButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            LoginButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            LoginButton.FillColor = Color.SteelBlue;
+            LoginButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LoginButton.ForeColor = Color.White;
+            LoginButton.Location = new Point(265, 354);
+            LoginButton.Name = "LoginButton";
+            LoginButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            LoginButton.Size = new Size(341, 52);
+            LoginButton.TabIndex = 2;
+            LoginButton.Text = "LOGIN";
+            LoginButton.Click += guna2Button1_Click;
             // 
-            // button3
+            // label2
             // 
-            button3.Location = new Point(353, 211);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.SlateGray;
+            label2.Location = new Point(165, 82);
+            label2.Name = "label2";
+            label2.Size = new Size(459, 23);
+            label2.TabIndex = 3;
+            label2.Text = "Silahkan masukkan username dan passwoard anda";
+            // 
+            // NamaPengguna
+            // 
+            NamaPengguna.AutoSize = true;
+            NamaPengguna.BackColor = Color.White;
+            NamaPengguna.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            NamaPengguna.Location = new Point(165, 137);
+            NamaPengguna.Name = "NamaPengguna";
+            NamaPengguna.Size = new Size(153, 21);
+            NamaPengguna.TabIndex = 6;
+            NamaPengguna.Text = "Nama Pengguna";
+            // 
+            // TextboxNP
+            // 
+            TextboxNP.BackColor = Color.Transparent;
+            TextboxNP.BorderRadius = 10;
+            TextboxNP.CustomizableEdges = customizableEdges3;
+            TextboxNP.DefaultText = "";
+            TextboxNP.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            TextboxNP.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            TextboxNP.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            TextboxNP.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            TextboxNP.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            TextboxNP.Font = new Font("Segoe UI", 9F);
+            TextboxNP.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            TextboxNP.Location = new Point(165, 173);
+            TextboxNP.Margin = new Padding(3, 4, 3, 4);
+            TextboxNP.Name = "TextboxNP";
+            TextboxNP.PlaceholderText = "";
+            TextboxNP.SelectedText = "";
+            TextboxNP.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            TextboxNP.Size = new Size(513, 44);
+            TextboxNP.TabIndex = 7;
+            // 
+            // KataSandi
+            // 
+            KataSandi.AutoSize = true;
+            KataSandi.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            KataSandi.Location = new Point(165, 245);
+            KataSandi.Name = "KataSandi";
+            KataSandi.Size = new Size(103, 21);
+            KataSandi.TabIndex = 8;
+            KataSandi.Text = "Kata Sandi";
+            // 
+            // TextboxKS
+            // 
+            TextboxKS.BorderRadius = 10;
+            TextboxKS.CustomizableEdges = customizableEdges5;
+            TextboxKS.DefaultText = "";
+            TextboxKS.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            TextboxKS.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            TextboxKS.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            TextboxKS.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            TextboxKS.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            TextboxKS.Font = new Font("Segoe UI", 9F);
+            TextboxKS.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            TextboxKS.Location = new Point(165, 280);
+            TextboxKS.Margin = new Padding(3, 4, 3, 4);
+            TextboxKS.Name = "TextboxKS";
+            TextboxKS.PlaceholderText = "";
+            TextboxKS.SelectedText = "";
+            TextboxKS.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            TextboxKS.Size = new Size(513, 44);
+            TextboxKS.TabIndex = 9;
+            // 
+            // LupaKataSandi
+            // 
+            LupaKataSandi.AutoSize = true;
+            LupaKataSandi.BackColor = Color.Transparent;
+            LupaKataSandi.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LupaKataSandi.ForeColor = Color.SteelBlue;
+            LupaKataSandi.Location = new Point(474, 245);
+            LupaKataSandi.Name = "LupaKataSandi";
+            LupaKataSandi.Size = new Size(204, 21);
+            LupaKataSandi.TabIndex = 10;
+            LupaKataSandi.Text = "Lupa kata sandi anda?";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(297, 425);
+            label5.Name = "label5";
+            label5.Size = new Size(162, 19);
+            label5.TabIndex = 11;
+            label5.Text = "belum punya akun?";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.SteelBlue;
+            label6.Location = new Point(456, 425);
+            label6.Name = "label6";
+            label6.Size = new Size(103, 19);
+            label6.TabIndex = 12;
+            label6.Text = "Daftar disini";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            BackColor = Color.White;
+            ClientSize = new Size(866, 477);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(LupaKataSandi);
+            Controls.Add(TextboxKS);
+            Controls.Add(KataSandi);
+            Controls.Add(TextboxNP);
+            Controls.Add(NamaPengguna);
+            Controls.Add(label2);
+            Controls.Add(LoginButton);
+            Controls.Add(label1);
+            Font = new Font("Microsoft Sans Serif", 8.25F);
             Name = "Form1";
-            Text = "Form1";
+            Text = " ";
+            Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2Button LoginButton;
+        private Label label2;
+        private Label NamaPengguna;
+        private Guna.UI2.WinForms.Guna2TextBox TextboxNP;
+        private Label KataSandi;
+        private Guna.UI2.WinForms.Guna2TextBox TextboxKS;
+        private Label LupaKataSandi;
+        private Label label5;
+        private Label label6;
     }
 }
