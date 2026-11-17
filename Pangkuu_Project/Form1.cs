@@ -39,7 +39,23 @@ namespace Pangkuu_Project
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+            if (username == "admin" && password == "12345")
+            {
+                MessageBox.Show("Login Berhasil", "Informasi",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Form2 menu = new Form2();
+                menu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Username atau Password Salah",
+                "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPassword.Clear();
+                txtPassword.Focus();
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -56,30 +72,44 @@ namespace Pangkuu_Project
 
         private void btnHide_Click(object sender, EventArgs e)
         {
-            if (txtpassword.PasswordChar == '*')
+            if (txtPassword.PasswordChar == '*')
             {
-                txtpassword.PasswordChar = '\0';
+                txtPassword.PasswordChar = '\0';
                 btnHide.Text = "Hide";
             }
             else
             {
-                txtpassword.PasswordChar = '*';
+                txtPassword.PasswordChar = '*';
                 btnHide.Text = "Show";
             }
         }
 
 
-private void btnhide (object sender, EventArgs e)
+        private void btnhide(object sender, EventArgs e)
         {
-            txtpassword.UseSystemPasswordChar = true;
+            txtPassword.UseSystemPasswordChar = true;
             btnHide.Text = "Show";
         }
 
         private void btnhide_Click(object sender, EventArgs e)
         {
-        
+
         }
 
+        private void NamaPengguna_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

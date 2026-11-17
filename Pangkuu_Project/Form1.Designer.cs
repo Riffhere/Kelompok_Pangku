@@ -28,24 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             LoginButton = new Guna.UI2.WinForms.Guna2Button();
             label2 = new Label();
             NamaPengguna = new Label();
-            txtpengguna = new Guna.UI2.WinForms.Guna2TextBox();
+            txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             KataSandi = new Label();
-            txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
+            txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             LupaKataSandi = new Label();
-            label5 = new Label();
-            label6 = new Label();
             btnHide = new PictureBox();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)btnHide).BeginInit();
             SuspendLayout();
             // 
@@ -53,7 +52,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial Narrow", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(165, 38);
+            label1.Location = new Point(333, 32);
             label1.Name = "label1";
             label1.Size = new Size(185, 33);
             label1.TabIndex = 1;
@@ -64,7 +63,7 @@
             // 
             LoginButton.BackColor = Color.Transparent;
             LoginButton.BorderRadius = 6;
-            LoginButton.CustomizableEdges = customizableEdges1;
+            LoginButton.CustomizableEdges = customizableEdges13;
             LoginButton.DisabledState.BorderColor = Color.DarkGray;
             LoginButton.DisabledState.CustomBorderColor = Color.DarkGray;
             LoginButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -72,9 +71,9 @@
             LoginButton.FillColor = Color.SteelBlue;
             LoginButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LoginButton.ForeColor = Color.White;
-            LoginButton.Location = new Point(265, 354);
+            LoginButton.Location = new Point(262, 443);
             LoginButton.Name = "LoginButton";
-            LoginButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            LoginButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
             LoginButton.Size = new Size(341, 52);
             LoginButton.TabIndex = 2;
             LoginButton.Text = "LOGIN";
@@ -85,75 +84,77 @@
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.SlateGray;
-            label2.Location = new Point(165, 82);
+            label2.Location = new Point(129, 82);
             label2.Name = "label2";
-            label2.Size = new Size(459, 23);
+            label2.Size = new Size(575, 23);
             label2.TabIndex = 3;
-            label2.Text = "Silahkan masukkan username dan passwoard anda";
+            label2.Text = "Silahkan pilih role anda dan masukkan username dan passwoard";
+            label2.Click += label2_Click;
             // 
             // NamaPengguna
             // 
             NamaPengguna.AutoSize = true;
             NamaPengguna.BackColor = Color.White;
             NamaPengguna.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            NamaPengguna.Location = new Point(165, 137);
+            NamaPengguna.Location = new Point(180, 221);
             NamaPengguna.Name = "NamaPengguna";
-            NamaPengguna.Size = new Size(153, 21);
+            NamaPengguna.Size = new Size(110, 21);
             NamaPengguna.TabIndex = 6;
-            NamaPengguna.Text = "Nama Pengguna";
+            NamaPengguna.Text = "Ussername";
+            NamaPengguna.Click += NamaPengguna_Click;
             // 
-            // txtpengguna
+            // txtUsername
             // 
-            txtpengguna.BackColor = Color.Transparent;
-            txtpengguna.BorderRadius = 10;
-            txtpengguna.CustomizableEdges = customizableEdges3;
-            txtpengguna.DefaultText = "";
-            txtpengguna.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtpengguna.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtpengguna.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtpengguna.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtpengguna.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtpengguna.Font = new Font("Segoe UI", 9F);
-            txtpengguna.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtpengguna.Location = new Point(165, 173);
-            txtpengguna.Margin = new Padding(3, 4, 3, 4);
-            txtpengguna.Name = "txtpengguna";
-            txtpengguna.PlaceholderText = "masukkan nama pengguna";
-            txtpengguna.SelectedText = "";
-            txtpengguna.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtpengguna.Size = new Size(513, 44);
-            txtpengguna.TabIndex = 7;
+            txtUsername.BackColor = Color.Transparent;
+            txtUsername.BorderRadius = 10;
+            txtUsername.CustomizableEdges = customizableEdges15;
+            txtUsername.DefaultText = "";
+            txtUsername.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtUsername.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtUsername.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtUsername.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtUsername.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtUsername.Font = new Font("Segoe UI", 9F);
+            txtUsername.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtUsername.Location = new Point(180, 259);
+            txtUsername.Margin = new Padding(3, 4, 3, 4);
+            txtUsername.Name = "txtUsername";
+            txtUsername.PlaceholderText = "masukkan ussername";
+            txtUsername.SelectedText = "";
+            txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtUsername.Size = new Size(513, 44);
+            txtUsername.TabIndex = 7;
             // 
             // KataSandi
             // 
             KataSandi.AutoSize = true;
             KataSandi.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            KataSandi.Location = new Point(165, 245);
+            KataSandi.Location = new Point(180, 331);
             KataSandi.Name = "KataSandi";
-            KataSandi.Size = new Size(103, 21);
+            KataSandi.Size = new Size(96, 21);
             KataSandi.TabIndex = 8;
-            KataSandi.Text = "Kata Sandi";
+            KataSandi.Text = "Password";
             // 
-            // txtpassword
+            // txtPassword
             // 
-            txtpassword.BorderRadius = 10;
-            txtpassword.CustomizableEdges = customizableEdges5;
-            txtpassword.DefaultText = "";
-            txtpassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtpassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtpassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtpassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtpassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtpassword.Font = new Font("Segoe UI", 9F);
-            txtpassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtpassword.Location = new Point(165, 280);
-            txtpassword.Margin = new Padding(3, 4, 3, 4);
-            txtpassword.Name = "txtpassword";
-            txtpassword.PlaceholderText = "masukkan kata sandi";
-            txtpassword.SelectedText = "";
-            txtpassword.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtpassword.Size = new Size(513, 44);
-            txtpassword.TabIndex = 9;
+            txtPassword.BorderRadius = 10;
+            txtPassword.CustomizableEdges = customizableEdges17;
+            txtPassword.DefaultText = "";
+            txtPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtPassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPassword.Font = new Font("Segoe UI", 9F);
+            txtPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPassword.Location = new Point(180, 366);
+            txtPassword.Margin = new Padding(3, 4, 3, 4);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PlaceholderText = "masukkan Password";
+            txtPassword.SelectedText = "";
+            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtPassword.Size = new Size(513, 44);
+            txtPassword.TabIndex = 9;
             // 
             // LupaKataSandi
             // 
@@ -161,38 +162,17 @@
             LupaKataSandi.BackColor = Color.Transparent;
             LupaKataSandi.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LupaKataSandi.ForeColor = Color.SteelBlue;
-            LupaKataSandi.Location = new Point(474, 245);
+            LupaKataSandi.Location = new Point(489, 331);
             LupaKataSandi.Name = "LupaKataSandi";
             LupaKataSandi.Size = new Size(204, 21);
             LupaKataSandi.TabIndex = 10;
             LupaKataSandi.Text = "Lupa kata sandi anda?";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(297, 425);
-            label5.Name = "label5";
-            label5.Size = new Size(162, 19);
-            label5.TabIndex = 11;
-            label5.Text = "belum punya akun?";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.SteelBlue;
-            label6.Location = new Point(456, 425);
-            label6.Name = "label6";
-            label6.Size = new Size(103, 19);
-            label6.TabIndex = 12;
-            label6.Text = "Daftar disini";
-            // 
             // btnHide
             // 
             btnHide.BackColor = Color.Transparent;
             btnHide.Image = (Image)resources.GetObject("btnHide.Image");
-            btnHide.Location = new Point(639, 289);
+            btnHide.Location = new Point(654, 375);
             btnHide.Name = "btnHide";
             btnHide.Size = new Size(25, 26);
             btnHide.SizeMode = PictureBoxSizeMode.Zoom;
@@ -200,19 +180,30 @@
             btnHide.TabStop = false;
             btnHide.Click += btnHide_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(180, 127);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 21);
+            label3.TabIndex = 14;
+            label3.Text = "Role";
+            label3.Click += label3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(866, 477);
+            ClientSize = new Size(866, 507);
+            Controls.Add(label3);
             Controls.Add(btnHide);
-            Controls.Add(label6);
-            Controls.Add(label5);
             Controls.Add(LupaKataSandi);
-            Controls.Add(txtpassword);
+            Controls.Add(txtPassword);
             Controls.Add(KataSandi);
-            Controls.Add(txtpengguna);
+            Controls.Add(txtUsername);
             Controls.Add(NamaPengguna);
             Controls.Add(label2);
             Controls.Add(LoginButton);
@@ -231,12 +222,11 @@
         private Guna.UI2.WinForms.Guna2Button LoginButton;
         private Label label2;
         private Label NamaPengguna;
-        private Guna.UI2.WinForms.Guna2TextBox txtpengguna;
+        private Guna.UI2.WinForms.Guna2TextBox txtUsername;
         private Label KataSandi;
-        private Guna.UI2.WinForms.Guna2TextBox txtpassword;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private Label LupaKataSandi;
-        private Label label5;
-        private Label label6;
         private PictureBox btnHide;
+        private Label label3;
     }
 }
